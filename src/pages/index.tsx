@@ -2,11 +2,12 @@ import React from "react";
 import { RootLayout } from "@components/RootLayout";
 import { Header } from "@components/Header";
 import { Paragraph } from "@components/Paragraph";
+import { Trans } from "@lingui/react";
 
 const IndexPage = () => (
     <RootLayout>
-        <Header>Apple Watch Series 5 Status</Header>
-        <Paragraph>Pre Order</Paragraph>
+        <Trans render={Header}>Apple Watch Series 5 Status</Trans>
+        <Trans render={Paragraph}>Pre Order</Trans>
     </RootLayout>
 );
 
